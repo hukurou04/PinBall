@@ -23,6 +23,12 @@ public class FripperController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		/*if (Input.touchCount == 1 ) {
+			if (Input.touches[0].position.x <= 0 && tag == "LeftFripperTag" && touch.phase == TouchPhase.Began) {
+				SetAngle (this.flickAngle);
+			}
+		}*/
+
 		//左矢印キーを押した時左フリッパーを動かす
 		if(Input.GetKeyDown(KeyCode.LeftArrow) && tag == "LeftFripperTag"){
 			SetAngle(this.flickAngle);
